@@ -5,95 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul Bhoir</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Monofett&family=Sansita+Swashed:wght@300&family=Source+Code+Pro&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar">
-            <h2>Rahul Bhoir</h2>
-            <ul class="navbar1">
-                <li>Work</li>
-                <li>Education</li>
-                <li>Internship</li>
-                <li>Contact Me</li>
-            </ul>
-        </div>
-        <div class="about">
-            <div class="info">
-                <h1>Hi.I'm Rahul.</h1>
-                <p>Python Developer</p>
-                <p>Also a Full Stack Web Developer and learning Game Development</p>
+    <div class="navbar">
+        <ul>
+            <li>Logo</li>
+            <li>Skills</li>
+            <li>About</li>
+            <li>Work</li>
+            <li>Achievement</li>
+        </ul>
+    </div>
+    <div class="wrapper-main">
+        <div class="header">
+            <div class="about">
+                <h1 id="name">Hi, I'm Rahul Bhoir.</h1>
+                <p>IT Engineer</p>
+                <p>A python developer, full stack web developer and</p>
+                <p>emerging Game Developer</p>
             </div>
             <div class="aboutImage">
                 <img src="#" alt="development style">
             </div>
         </div>
-        <div class="education">
-            <div class="info">
-                <p>Bachelor of Techonology</p>
-                <p>
-                <h4>Veermata Jijabai Technological Institute</h4>
-                </p>
+        <div class="info skills_container">
+            <div id="my-skills">
+                <h1 id="">Skills</h1>
             </div>
-            <div class="educationImage">
-                <img src="#" alt="degree">
-            </div>
-        </div>
-        <div class="internship">
-            <div class="info">
-                <h3>Doxper</h3>
-                <p>Jun 2020 - Aug 2020</p>
-                <p>Backend Developer</p>
-            </div>
-            <div class="internshipImage">
-                <img src="https://doxper.com/wp-content/themes/MED/images/svg/logo.svg" alt="internship">
-            </div>
-        </div>
-        <div class="skills">
+
             <!-- this will be with images so no second div -->
-            <div>
-                <div>Python</div>
-                <div>Django</div>
-                <div>MySQL</div>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>Javascript</div>
-                <div>Java</div>
-                <div>C++</div>
-                <div>Tensorflow</div>
-            </div>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="lang">Tensorflow</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="lang">Django</td>
+                    <td></td>
+                    <td class="lang">Python</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="lang">C++</td>
+                    <td></td>
+                    <td class="lang">MySQL</td>
+                    <td></td>
+                    <td class="lang">CSS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="lang">HTML</td>
+                    <td></td>
+                    <td class="lang">Java</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="lang">Javascript</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
-        <div class="projects">
+        <div class="info projects">
             <!-- type -->
             <!-- name -->
             <!-- Techonology used -->
-            <ul>
-                <li>
-                    <div>
-                        <small>Desktop app</small>
-                        <h2>Defect Classification using Deep Learning</h2>
-                        <p>Python|Tensorflow</p>
+            <div>
+                <h1>Projects</h1>
+            </div>
+
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="image">
+                        <img src="/image/tf.png" alt="">
                     </div>
-                </li>
-                <li>
-                    <div>
-                        <small>Web app</small>
-                        <h2>Creative Minds</h2>
-                        <p>Python|Django|HTML|CSS|SQLite</p>
+                    <small>Desktop app</small>
+                    <h2>Defect Classification using Deep Learning</h2>
+                    <p class="lang-used">Python | Tensorflow</p>
+                    <button>View Project</button>
+                </div>
+                <div class="project-card">
+                    <div class="image">
+                        <img src="/image/django-banner.svg" alt="">
                     </div>
-                </li>
-                <li>
-                    <div>
-                        <small>Web app</small>
-                        <h2>PortFolio</h2>
-                        <p>HTML|CSS|Saas</p>
+                    <small>Web app</small>
+                    <h2>Creative Minds</h2>
+                    <p class="lang-used">Python | Django | HTML | CSS | SQLite</p>
+                    <button>View Project</button>
+                </div>
+                <div class="project-card">
+                    <div class="image">
+                        <img src="/image/html.png" alt="">
                     </div>
-                </li>
-            </ul>
+
+                    <small>Web app</small>
+                    <h2>PortFolio</h2>
+                    <p class="lang-used">HTML | CSS | Saas</p>
+                    <button>View Project</button>
+                </div>
+            </div>
         </div>
-        <div class="contactMe">
+        <div class="info div_contact">
             <h1>Contact Me</h1>
-            <p>rahulbhoir002@gmail.com</p>
+            <p> Drop a mail at rahulbhoir002@gmail.com</p>
         </div>
     </div>
 

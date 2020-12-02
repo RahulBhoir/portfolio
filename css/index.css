@@ -125,6 +125,7 @@ p {
 }
 
 table {
+  color: var(--blackColor);
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
@@ -136,7 +137,6 @@ table {
   border-radius: 0.2em;
   font-size: 2.5em;
   text-align: center;
-  color: #61b15a;
   background-color: var(--navbarColor);
 }
 

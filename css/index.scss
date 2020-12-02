@@ -1,0 +1,188 @@
+// font-family: 'Major Mono Display', monospace;
+// font-family: 'Monofett', cursive;
+// font-family: 'Sansita Swashed', cursive;
+// font-family: 'Source Code Pro', monospace;
+// font-family: 'Source Sans Pro', sans-serif;
+
+*{
+    box-sizing:border-box;
+}
+
+:root{
+    --fontText: 'Source Code Pro', sans-serif;
+    --fontHeading:'Source Code Pro', sans-serif;
+    --fontSize : 16px;
+    --navbarColor : #ffd369;
+    --blackColor: #000000;
+    --textColor : #eeeeee;
+    --bgColor : #222831;
+    --borderRadius : 0.2em;
+}
+small h2 p{
+    font-family: var(--fontHeading);
+}
+body{
+    margin: 0;
+    font-size: var(--size);
+    color: var(--textColor);
+    background-color: var(--bgColor);
+}
+
+.navbar{
+    margin-top:0;
+    padding: 0;
+    width: 100vm;
+    background-color: var(--navbarColor);
+    margin: 0;
+    height: 3.5em;
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 3em;
+        padding: 0;
+    }
+    ul li{
+        font-family: var(--fontHeading);
+        font-size: 1.5em;
+        padding-right: 2em;
+        font-weight: bold;
+        color: var(--blackColor)
+    }
+    li{
+        text-decoration: underline;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+    li:first-child{
+        margin-right: auto;
+        margin-left: 4em;
+    }
+}
+
+.wrapper-main{
+    margin: 4em;
+}
+
+// ----------------------About me--------------------
+.header{
+    font-family: var(--fontText);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-1em ;
+    height: 30em;
+    margin-left: 2em;
+}
+
+.about{
+    font-family: var(--fontHeading);
+    font-size: 1.5em;
+}
+
+#name{
+    margin-left: 0;
+}
+p{
+    margin-top: -1em;
+}
+
+
+// ----------------------Skills--------------------
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.info{
+    // border: 1px solid var(--navbarColor);
+}
+
+.skills_container{
+    
+    display: flex;
+    flex-direction: row;
+    height: 30em;
+
+}
+
+#my-skills{
+    font-family: var(--fontHeading);
+    margin-left: 1em;
+    
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    height: 25em;
+    width: 60em;
+} 
+.lang{
+    // font-family:;
+    border-radius: 0.2em;
+    font-size: 2.5em;
+    text-align: center;
+    color: #61b15a;
+    background-color: var(--navbarColor);
+}
+
+// ----------------------projects--------------------
+.projects{
+    display: block;
+
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    height: 35em;
+}
+.project-card{
+    position: relative;
+    color: var(--bgColor);
+    background-color: var(--navbarColor);
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 25em;
+    // border-top: 4px solid var(--textColor);
+}
+img{
+    width: 23em;
+    height: 15em;
+    // border: 1px solid white;
+    // margin-left: 0.5em;
+    background-color: var(--bgColor);
+    border-radius: 0.5em;
+}
+small{
+    border-radius: 0.2em;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    background-color: var(--textColor);
+}
+h2{
+    font-size: 2em;
+}
+.lang-used{
+    font-size: 1.2em;
+}
+
+button{
+    position: absolute;
+    height: 3em;
+    width: 95%;
+    margin-left: -0.5em;
+    margin-bottom: -1em;
+    bottom: 1.5em;
+    border-radius: 0.2em;
+
+}
+
+@media screen and (max-width: 600px){
+    table{
+        height: 15em;
+        width: 30em;
+    }
+}

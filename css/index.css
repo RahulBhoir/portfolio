@@ -1,7 +1,6 @@
 * {
-  margin-top: 0;
-  box-style: border-box;
-  font-family: 'Source Code Pro', monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -113,6 +112,10 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 30em;
 }
 
@@ -151,19 +154,23 @@ table {
 }
 
 .project-card {
+  position: relative;
   color: var(--bgColor);
   background-color: var(--navbarColor);
   padding: 1em;
-  border-radius: 0.2em;
+  border-radius: 0.5em;
+  width: 25em;
 }
 
 img {
-  width: 26em;
+  width: 23em;
   height: 15em;
   background-color: var(--bgColor);
+  border-radius: 0.5em;
 }
 
 small {
+  border-radius: 0.2em;
   font-size: 1.4em;
   text-transform: capitalize;
   background-color: var(--textColor);
@@ -175,5 +182,22 @@ h2 {
 
 .lang-used {
   font-size: 1.2em;
+}
+
+button {
+  position: absolute;
+  height: 3em;
+  width: 95%;
+  margin-left: -0.5em;
+  margin-bottom: -1em;
+  bottom: 1.5em;
+  border-radius: 0.2em;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    height: 15em;
+    width: 30em;
+  }
 }
 /*# sourceMappingURL=index.css.map */
